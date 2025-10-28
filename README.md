@@ -12,7 +12,7 @@ A modern, full-stack Airbnb clone built with React, TypeScript, Node.js, and Exp
 - **Date Range Picker**: Dual calendar for check-in/check-out selection
 - **Guest Management**: Adults, children, infants, and pets selection
 - **Category Filters**: Beachfront, Cabins, Villas, Apartments, Luxury, Budget, Mountain
-- **Property Listings**: 28+ diverse properties across 8 US cities
+- **Property Listings**: 46 diverse properties across 26 US locations
 - **Responsive Design**: Mobile-first approach with full responsiveness
 - **Image Galleries**: High-quality property images from Unsplash
 
@@ -77,55 +77,16 @@ Pre-defined category filters:
 
 ### Mock Data
 
-The application includes 38 diverse properties:
-- 8 cities: Malibu, Brooklyn, Austin, Aspen, Miami Beach, San Francisco, Honolulu, Scottsdale
-- Price range: $120 - $2200 per night
-- Property types: Villa, Apartment, Cabin, House, Loft, Condo, Penthouse
-- All properties have unique images and descriptions
-
-## 🧪 API Endpoints
-
-### Listings
-
-```
-GET    /api/listings              # Get all listings with filters
-GET    /api/listings/:id          # Get single listing
-POST   /api/listings              # Create listing (auth required)
-PUT    /api/listings/:id          # Update listing (auth required)
-DELETE /api/listings/:id          # Delete listing (auth required)
-```
-
-### Authentication
-
-```
-POST   /api/auth/register         # Register new user
-POST   /api/auth/login            # Login user
-GET    /api/auth/me               # Get current user (auth required)
-```
-
-### Bookings
-
-```
-GET    /api/bookings              # Get user bookings (auth required)
-POST   /api/bookings              # Create booking (auth required)
-GET    /api/bookings/:id          # Get booking details (auth required)
-DELETE /api/bookings/:id          # Cancel booking (auth required)
-```
-
-### Query Parameters for Listings
-
-```
-?city=Malibu              # Filter by city
-?propertyType=Villa       # Filter by property type
-?minPrice=200            # Minimum price
-?maxPrice=1000           # Maximum price
-?guests=4                # Minimum guest capacity
-?bedrooms=2              # Number of bedrooms
-?bathrooms=2             # Number of bathrooms
-?amenities=Pool,WiFi     # Required amenities
-?page=1                  # Pagination
-?limit=20                # Results per page
-```
+The application includes 46 diverse properties across the United States:
+- **Locations**: Nashville, Napa Valley, Austin, Seattle, Charleston, Los Angeles, Boston, Honolulu, Santa Fe, Portland, Malibu, Park City, Denver, Philadelphia, San Diego, Brooklyn, Las Vegas, Miami Beach, Chicago, Aspen, New Orleans, Scottsdale, South Lake Tahoe, New York, Savannah, San Francisco
+- **Price range**: $120 - $2200 per night
+- **Property types**: Penthouse, House, Loft, Villa, Condo, Cabin, Apartment
+- **New locations**:
+  - Philadelphia, PA - Historic colonial townhouse
+  - Savannah, GA - Victorian mansion with Southern charm
+  - Santa Fe, NM - Authentic adobe hacienda
+  - Napa Valley, CA - Luxury wine country estate
+- All properties feature unique images, detailed descriptions, and authentic amenities
 
 
 

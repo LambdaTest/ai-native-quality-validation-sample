@@ -27,7 +27,7 @@ const Header = () => {
             >
               <path d="M16 1c2 0 3.46 1.5 3.46 3.8 0 2.6-2.5 6-3.46 7.3-.96-1.3-3.46-4.7-3.46-7.3C12.54 2.5 14 1 16 1zm0 14.5c4.5 0 8.5 1.5 11.5 4C29 21 30 23 30 25.5c0 2.8-2.2 5-5 5H7c-2.8 0-5-2.2-5-5 0-2.5 1-4.5 2.5-6 3-2.5 7-4 11.5-4z" />
             </svg>
-            <span className="ml-2 text-xl font-bold text-airbnb-red">Github Demo</span>
+            <span className="ml-2 text-xl font-bold text-airbnb-red">Demo Github App</span>
           </Link>
 
           {/* User Menu */}

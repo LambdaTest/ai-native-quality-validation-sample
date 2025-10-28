@@ -13,6 +13,9 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import ListingDetail from './pages/ListingDetail';
 import BecomeHost from './pages/BecomeHost';
+import Profile from './pages/Profile';
+import Favorites from './pages/Favorites';
+import Bookings from './pages/Bookings';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -42,6 +45,9 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/listing/:id" element={<ListingDetail />} />
             <Route path="/become-host" element={<BecomeHost />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/bookings" element={<Bookings />} />
           </Routes>
           <Toaster
             position="top-center"
