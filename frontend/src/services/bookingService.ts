@@ -1,4 +1,5 @@
 import api from './api';
+import { mockBookingService } from './mock/mockBookingService';
 import type { Booking } from '../types';
 
 interface CreateBookingData {
@@ -8,7 +9,7 @@ interface CreateBookingData {
   guests: number;
 }
 
-export const bookingService = {
+const realBookingService = {
   async createBooking(data: CreateBookingData): Promise<{ booking: Booking }> {
     const response = await api.post<{ booking: Booking }>('/bookings', data);
     return response.data;
@@ -34,3 +35,7 @@ export const bookingService = {
     return response.data;
   },
 };
+
+export const bookingService = import.meta.env.VITE_MOCK_API === 'true'
+  ? mockBookingService
+  : realBookingService;

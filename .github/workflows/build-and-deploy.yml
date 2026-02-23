@@ -1,5 +1,8 @@
 name: Deploy PR to Azure VM
 
+# Disabled — replaced by deploy-github-pages.yml
+if: false
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]

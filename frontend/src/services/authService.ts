@@ -1,4 +1,5 @@
 import api from './api';
+import { mockAuthService } from './mock/mockAuthService';
 import type { AuthResponse, User } from '../types';
 
 interface LoginCredentials {
@@ -11,7 +12,7 @@ interface RegisterData extends LoginCredentials {
   lastName: string;
 }
 
-export const authService = {
+const realAuthService = {
   async register(data: RegisterData): Promise<AuthResponse> {
     const response = await api.post<AuthResponse>('/auth/register', data);
     return response.data;
@@ -32,3 +33,7 @@ export const authService = {
     return response.data;
   },
 };
+
+export const authService = import.meta.env.VITE_MOCK_API === 'true'
+  ? mockAuthService
+  : realAuthService;

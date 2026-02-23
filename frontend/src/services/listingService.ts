@@ -1,7 +1,8 @@
 import api from './api';
+import { mockListingService } from './mock/mockListingService';
 import type { Listing, ListingsResponse, SearchFilters } from '../types';
 
-export const listingService = {
+const realListingService = {
   async getAllListings(filters?: SearchFilters, page = 1, limit = 20): Promise<ListingsResponse> {
     const params = new URLSearchParams();
 
@@ -60,3 +61,7 @@ export const listingService = {
     return response.data;
   },
 };
+
+export const listingService = import.meta.env.VITE_MOCK_API === 'true'
+  ? mockListingService
+  : realListingService;
