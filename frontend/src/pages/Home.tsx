@@ -14,6 +14,7 @@ const categories = [
   { name: 'Luxury', icon: '✨', filter: { minPrice: 500 } },
   { name: 'Budget', icon: '🎯', filter: { maxPrice: 300 } },
   { name: 'Mountain', icon: '🏔️', filter: { amenities: ['Mountain View'] } },
+  { name: 'Trending', icon: '🔥', filter: { minPrice: 200, maxPrice: 600 } },
 ];
 
 const Home = () => {
@@ -52,7 +53,7 @@ const Home = () => {
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-airbnb-red mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading amazing stays...</p>
+          <p className="mt-4 text-gray-600">Finding the best stays for you...</p>
         </div>
       </div>
     );
@@ -75,10 +76,10 @@ const Home = () => {
       <div className="bg-gradient-to-b from-gray-50 to-white py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center text-gray-900 mb-2">
-            Discover Your Perfect Getaway
+            Find Your Next Adventure
           </h1>
           <p className="text-center text-gray-600 mb-8">
-            Explore unique stays and experiences around the world
+            Book unique homes, experiences, and places around the world
           </p>
           <SearchBar onSearch={handleSearch} initialFilters={searchFilters} />
         </div>
