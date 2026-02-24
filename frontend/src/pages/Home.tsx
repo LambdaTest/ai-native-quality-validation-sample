@@ -193,6 +193,16 @@ const Home = () => {
           </div>
         )}
 
+        {/* Results Summary Banner */}
+        {data && data.listings.length > 0 && (
+          <div className="mt-8 mb-4 p-4 bg-gray-50 rounded-xl text-center">
+            <p className="text-sm text-gray-600">
+              Showing {data.listings.length} of {data.pagination.total} {data.pagination.total === 1 ? 'stay' : 'stays'}
+              {activeCategory !== 'All' && <span className="font-medium text-gray-900"> in {activeCategory}</span>}
+            </p>
+          </div>
+        )}
+
         {/* Pagination */}
         {data && data.pagination.pages > 1 && (
           <div className="mt-12 flex justify-center items-center space-x-2">
@@ -230,6 +240,41 @@ const Home = () => {
           </div>
         )}
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 border-t border-gray-200 mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-3">Support</h4>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><a href="#" className="hover:underline">Help Center</a></li>
+                <li><a href="#" className="hover:underline">Safety Information</a></li>
+                <li><a href="#" className="hover:underline">Cancellation Options</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-3">Community</h4>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><a href="#" className="hover:underline">Blog</a></li>
+                <li><a href="#" className="hover:underline">Forum</a></li>
+                <li><a href="#" className="hover:underline">Invite Friends</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-3">About</h4>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><a href="#" className="hover:underline">How it works</a></li>
+                <li><a href="#" className="hover:underline">Careers</a></li>
+                <li><a href="#" className="hover:underline">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-8 pt-6 border-t border-gray-300 text-center text-sm text-gray-500">
+            Demo Github App &middot; Built for testing purposes
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
