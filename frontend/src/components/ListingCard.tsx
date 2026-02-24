@@ -112,6 +112,12 @@ const ListingCard = ({ listing }: ListingCardProps) => {
           )}
         </div>
 
+        {listing.rating && listing.rating >= 4.8 && (
+          <span className="inline-block text-xs font-semibold text-white bg-airbnb-red px-2 py-0.5 rounded-full">
+            Superhost
+          </span>
+        )}
+
         <p className="text-sm text-airbnb-gray truncate">
           {listing.propertyType} · {listing.bedrooms} bedroom
           {listing.bedrooms > 1 ? 's' : ''}
