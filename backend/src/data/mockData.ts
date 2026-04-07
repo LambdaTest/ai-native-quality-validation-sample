@@ -11,7 +11,7 @@ export const mockUsers = [
     lastName: 'Admin',
     avatar: 'https://i.pravatar.cc/150?img=68',
     phone: '+1-555-0100',
-    bio: 'LambdaTest administrator account for testing and demo purposes.',
+    bio: 'LambdaTest administrator rahul gupta account for testing and demo purposes.',
     isHost: true,
     createdAt: new Date('2018-01-01'),
     updatedAt: new Date('2024-10-24'),
