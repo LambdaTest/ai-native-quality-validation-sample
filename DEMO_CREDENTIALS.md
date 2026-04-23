@@ -11,7 +11,6 @@ This document contains demo credentials for testing the Airbnb Clone application
 ```
 password123
 ```
-
 ---
 
 ## Demo Users
