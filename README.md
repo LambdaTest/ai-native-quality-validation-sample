@@ -1,5 +1,5 @@
 
-# 🔧 Setup for GitHub App Quick Start with Your Own Fork — TestMu AI (Formerly LambdaTest)
+# 🔧 Setup for GitHub App Quick Start with Your Own Fork — TestMu AI (Formerly LambdaTest)
 
 To use this repository with the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud), follow these steps:
 
