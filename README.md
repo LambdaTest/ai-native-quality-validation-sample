@@ -1,19 +1,19 @@
 
-# 🔧 Setup for GitHub App Quick Start with Your Own Fork
+# 🔧 Setup for GitHub App Quick Start with Your Own Fork | TestMu AI (Formerly LambdaTest)
 
-To use this repository with the [LambdaTest Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud), follow these steps:
+To use this repository with the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud), follow these steps:
 
 1. **Fork the repository** — Click **Fork** to create a copy under your GitHub account.
-2. **Install the GitHub App** — Install the [LambdaTest Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud) on your forked repository.
-3. **Configure credentials** — Add the `.lambdatest/config.yaml` file with your LambdaTest project ID, folder ID, and other configuration values. See the [configuration guide](https://www.testmuai.com/support/docs/github-app-integration/#repository-configuration) for details.
+2. **Install the GitHub App** — Install the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud) on your forked repository.
+3. **Configure credentials** — Add the `.lambdatest/config.yaml` file with your TestMu AI project ID, folder ID, and other configuration values. See the [configuration guide](https://www.testmuai.com/support/docs/github-app-integration/#repository-configuration) for details.
 4. **Enable GitHub Actions** — Go to the **Actions** tab in your forked repository and enable workflows.
 5. **Enable GitHub Pages** — Go to **Settings → Pages** and set the branch to **gh-pages** with root directory.
 6. **Raise a PR against your own fork** — Create a feature branch in your fork, make changes, and open a pull request **targeting your fork's `main` branch** (not the upstream repository).
 7. **Trigger the workflow** — Comment `@KaneAI Validate this PR` on your pull request.
 
-> **Note**: Pull requests to the upstream (LambdaTest) repository from non-authorized users will be automatically closed. Preview deployments and KaneAI validation are only available on PRs raised against your own fork.
+> **Note**: Pull requests to the upstream (TestMu AI) repository from non-authorized users will be automatically closed. Preview deployments and KaneAI validation are only available on PRs raised against your own fork.
 
-For detailed documentation, visit the [LambdaTest Cloud GitHub App Integration Guide](https://www.testmuai.com/support/docs/github-app-integration/).
+For detailed documentation, visit the [TestMu AI Cloud GitHub App Integration Guide](https://www.testmuai.com/support/docs/github-app-integration/).
 
 
 
@@ -106,13 +106,22 @@ The application includes 46 diverse properties across the United States:
   - Napa Valley, CA - Luxury wine country estate
 - All properties feature unique images, detailed descriptions, and authentic amenities
 
+## 🚀 [LambdaTest is Now TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/)
 
+👋 Welcome to TestMu AI, the next evolution of LambdaTest. As of January 2026, LambdaTest has officially rebranded to TestMu AI. We have evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform designed for the modern DevOps era.
 
+Whether you have been part of the LambdaTest community for years or are just discovering TestMu AI, our mission remains the same: to help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
 
+**🔄 Our Rebrand Journey**
 
+We chose the name TestMu AI to reflect our shift towards intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community stay the same.
 
+**✨ Specialties**
 
+- 🤖 AI-Native Test Execution (Formerly LambdaTest)
+- ⚡ Autonomous Test Automation
+- 🌐 Cross-Browser & Mobile Testing
+- 📊 Unified Quality Intelligence
 
-
-
+👉 Find [LambdaTest's New Home](https://www.testmuai.com/)
 
