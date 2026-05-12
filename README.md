@@ -1,5 +1,5 @@
 
-# 🔧 Setup for GitHub App Quick Start with Your Own Fork
+# 🔧 Setup for GitHub App Quick Start with Your Own Fork — TestMu AI (Formerly LambdaTest)
 
 To use this repository with the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud), follow these steps:
 
@@ -22,6 +22,7 @@ For detailed documentation, visit the [TestMu AI Cloud GitHub App Integration Gu
 A modern, full-stack Airbnb clone built with React, TypeScript, Node.js, and Express. This project demonstrates a complete vacation rental platform with property listings, search functionality, user authentication, and booking management.
 
 
+
 ## 🌟 Features
 
 ### Frontend
@@ -40,6 +41,7 @@ A modern, full-stack Airbnb clone built with React, TypeScript, Node.js, and Exp
 - **Authentication**: JWT-based user authentication
 - **Filtering & Search**: Advanced query parameters for property filtering
 - **CORS Enabled**: Secure cross-origin resource sharing
+
 
 ## 🚀 Tech Stack
 
@@ -63,12 +65,14 @@ A modern, full-stack Airbnb clone built with React, TypeScript, Node.js, and Exp
 - **bcryptjs** - Password hashing
 - **CORS** - Cross-origin resource sharing
 
+
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
 - **Node.js** (v16 or higher)
 - **npm** or **yarn**
 - **Git**
+
 
 
 ## 🔑 Key Features Explained
@@ -106,14 +110,22 @@ The application includes 46 diverse properties across the United States:
   - Napa Valley, CA - Luxury wine country estate
 - All properties feature unique images, detailed descriptions, and authentic amenities
 
-## About TestMu AI (Formerly LambdaTest)
 
-TestMu AI is world's first full stack AI agentic quality engineering platform that empowers teams to test intelligently, smarter, and ship faster. Built for scale, it offers a full-stack testing cloud with 10K+ real devices and 3,000+ browsers.
+## 🚀 [LambdaTest is Now TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/)
 
-As of January 2026, LambdaTest has officially rebranded to TestMu AI. We've evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform built for the modern DevOps era.
+👋 Welcome to TestMu AI, the next evolution of LambdaTest. As of January 2026, LambdaTest has officially rebranded to TestMu AI. We have evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform designed for the modern DevOps era.
 
-Whether you've been part of the LambdaTest community for years or are just discovering TestMu AI, our mission stays the same: help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
+Whether you have been part of the LambdaTest community for years or are just discovering TestMu AI, our mission remains the same: to help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
 
-We chose the name TestMu AI to reflect our shift toward intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community remain.
+**🔄 Our Rebrand Journey**
 
-Check out our new home → <a href="https://www.testmuai.com/"><font color="blue">TestMu AI</font></a>
+We chose the name TestMu AI to reflect our shift towards intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community stay the same.
+
+**✨ Specialties**
+
+- 🤖 AI-Native Test Execution (Formerly LambdaTest)
+- ⚡ Autonomous Test Automation
+- 🌐 Cross-Browser & Mobile Testing
+- 📊 Unified Quality Intelligence
+
+👉 Find [LambdaTest's New Home](https://www.testmuai.com/).
