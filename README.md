@@ -106,13 +106,14 @@ The application includes 46 diverse properties across the United States:
   - Napa Valley, CA - Luxury wine country estate
 - All properties feature unique images, detailed descriptions, and authentic amenities
 
+## About TestMu AI (Formerly LambdaTest)
 
+TestMu AI is world's first full stack AI agentic quality engineering platform that empowers teams to test intelligently, smarter, and ship faster. Built for scale, it offers a full-stack testing cloud with 10K+ real devices and 3,000+ browsers.
 
+As of January 2026, LambdaTest has officially rebranded to TestMu AI. We've evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform built for the modern DevOps era.
 
+Whether you've been part of the LambdaTest community for years or are just discovering TestMu AI, our mission stays the same: help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
 
+We chose the name TestMu AI to reflect our shift toward intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community remain.
 
-
-
-
-
-
+Check out our new home → <a href="https://www.testmuai.com/"><font color="blue">TestMu AI</font></a>
