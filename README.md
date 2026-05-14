@@ -1,141 +1,112 @@
+# AI-Native Quality Validation Sample with TestMu AI (Formerly LambdaTest)
 
-# 🔧 Setup for GitHub App Quick Start with Your Own Fork — TestMu AI (Formerly LambdaTest)
+<p align="center">
+  <a href="https://www.testmuai.com/"><img src="https://img.shields.io/badge/MADE%20BY%20TestMu%20AI-000000.svg?style=for-the-badge&labelColor=000" alt="Made by TestMu AI"></a>
+  <a href="https://community.testmuai.com/"><img src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&labelColor=000000" alt="Community"></a>
+</p>
 
-To use this repository with the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud), follow these steps:
+## Getting Started
 
-1. **Fork the repository** — Click **Fork** to create a copy under your GitHub account.
-2. **Install the GitHub App** — Install the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud) on your forked repository.
-3. **Configure credentials** — Add the `.lambdatest/config.yaml` file with your TestMu AI project ID, folder ID, and other configuration values. See the [configuration guide](https://www.testmuai.com/support/docs/github-app-integration/#repository-configuration) for details.
-4. **Enable GitHub Actions** — Go to the **Actions** tab in your forked repository and enable workflows.
-5. **Enable GitHub Pages** — Go to **Settings → Pages** and set the branch to **gh-pages** with root directory.
-6. **Raise a PR against your own fork** — Create a feature branch in your fork, make changes, and open a pull request **targeting your fork's `main` branch** (not the upstream repository).
-7. **Trigger the workflow** — Comment `@KaneAI Validate this PR` on your pull request.
+[TestMu AI](https://www.testmuai.com/) (Formerly LambdaTest) is the world's first full-stack AI Agentic Quality Engineering platform that empowers teams to test intelligently, smarter, and ship faster. Built for scale, it offers a full-stack testing cloud with 10K+ real devices and 3,000+ browsers. With AI-native test management, MCP servers, and agent-based automation, TestMu AI supports Selenium, Appium, Playwright, and all major frameworks.
 
-> **Note**: Pull requests to the upstream (TestMu AI) repository from non-authorized users will be automatically closed. Preview deployments and KaneAI validation are only available on PRs raised against your own fork.
+This sample demonstrates AI-native quality validation using KaneAI and the TestMu AI Cloud GitHub App. It uses a full-stack Airbnb clone as the test target to showcase autonomous PR validation on TestMu AI.
 
-For detailed documentation, visit the [TestMu AI Cloud GitHub App Integration Guide](https://www.testmuai.com/support/docs/github-app-integration/).
+- [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
+- Follow the documentation on [AI-Native Quality Validation with KaneAI on TestMu AI](https://www.testmuai.com/support/docs/github-app-integration/) (Formerly LambdaTest) for the full setup walkthrough.
 
+### Prerequisites
 
+- A GitHub account
+- A TestMu AI (Formerly LambdaTest) account with your project ID, folder ID, and access key
+- The [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud) installed on your fork
 
-# Airbnb Clone - Full Stack Application
+### Setup
 
-A modern, full-stack Airbnb clone built with React, TypeScript, Node.js, and Express. This project demonstrates a complete vacation rental platform with property listings, search functionality, user authentication, and booking management.
+Fork the repository and configure the GitHub App:
 
+```bash
+# Fork the repository on GitHub, then clone your fork
+git clone https://github.com/YOUR_USERNAME/ai-native-quality-validation-sample
+cd ai-native-quality-validation-sample
+```
 
+Then complete the setup steps:
 
-## 🌟 Features
+1. Install the [TestMu AI Cloud GitHub App](https://github.com/apps/lambdatest-ai-cloud) on your forked repository.
+2. Add the `.lambdatest/config.yaml` file with your TestMu AI project ID, folder ID, and configuration values.
+3. Go to the **Actions** tab and enable workflows.
+4. Go to **Settings -> Pages** and set the branch to **gh-pages** with root directory.
 
-### Frontend
-- **Modern UI/UX**: Airbnb-inspired design with Tailwind CSS
-- **Advanced Search**: Location-based search with autocomplete
-- **Date Range Picker**: Dual calendar for check-in/check-out selection
-- **Guest Management**: Adults, children, infants, and pets selection
-- **Category Filters**: Beachfront, Cabins, Villas, Apartments, Luxury, Budget, Mountain
-- **Property Listings**: 46 diverse properties across 26 US locations
-- **Responsive Design**: Mobile-first approach with full responsiveness
-- **Image Galleries**: High-quality property images from Unsplash
+### Run tests
 
-### Backend
-- **RESTful API**: Clean API architecture with Express.js
-- **Mock Data Mode**: Run without database setup using production-ready mock data
-- **Authentication**: JWT-based user authentication
-- **Filtering & Search**: Advanced query parameters for property filtering
-- **CORS Enabled**: Secure cross-origin resource sharing
+Create a feature branch, push your changes, and open a pull request targeting your fork's `main` branch:
 
+```bash
+git checkout -b feature/your-change
+git push origin feature/your-change
+```
 
-## 🚀 Tech Stack
+Then trigger KaneAI validation by commenting on your pull request:
 
-### Frontend
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **React Router** - Client-side routing
-- **React Query** - Data fetching and caching
-- **Zustand** - State management
-- **Tailwind CSS** - Utility-first CSS framework
-- **React DatePicker** - Date selection component
-- **React Icons** - Icon library
+```
+@KaneAI Validate this PR
+```
 
-### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **TypeScript** - Type safety
-- **MongoDB** (optional) - Database
-- **JWT** - Authentication
-- **bcryptjs** - Password hashing
-- **CORS** - Cross-origin resource sharing
+View results on your TestMu AI dashboard.
 
+### Local testing with TestMu AI Tunnel
 
-## 📋 Prerequisites
+To test locally hosted apps, set up the TestMu AI tunnel. OS-specific guides:
 
-Before you begin, ensure you have the following installed:
-- **Node.js** (v16 or higher)
-- **npm** or **yarn**
-- **Git**
+- [Local Testing on Windows](https://www.testmuai.com/support/docs/local-testing-for-windows/)
+- [Local Testing on macOS](https://www.testmuai.com/support/docs/local-testing-for-macos/)
+- [Local Testing on Linux](https://www.testmuai.com/support/docs/local-testing-for-linux/)
 
+Add the following to your capabilities:
 
+```js
+tunnel: true,
+```
 
-## 🔑 Key Features Explained
+## Contributions
 
-### Search Functionality
+Contributions are welcome. Open an issue to discuss your idea before submitting a pull request. When reporting bugs, include your Node.js version, OS, and browser version.
 
-The search bar includes:
-- **Location Search**: Autocomplete dropdown with 8 major US cities
-- **Date Selection**: Range picker with 2-month view
-- **Guest Selector**: Separate counters for adults, children, infants, and pets
-- **Real-time Filtering**: Instant results without page reload
+## TestMu AI (Formerly LambdaTest) Community
 
-### Property Filters
+Connect with testers and developers in the [TestMu AI Community](https://community.testmuai.com/). Ask questions, share what you are building, and discuss best practices in test automation and DevOps.
 
-Pre-defined category filters:
-- **All**: Show all properties
-- **Beachfront**: Properties with beach access
-- **Cabins**: Mountain cabins and lodges
-- **Villas**: Luxury villas
-- **Apartments**: Urban apartments
-- **Luxury**: Properties over $500/night
-- **Budget**: Properties under $300/night
-- **Mountain**: Properties with mountain views
+## TestMu AI (Formerly LambdaTest) Certifications
 
-### Mock Data
+Earn free [TestMu AI Certifications](https://www.testmuai.com/certifications/) for testers, developers, and QA engineers. Validate your skills in Selenium, Cypress, Playwright, Appium, Espresso and more. Industry-recognized, shareable on LinkedIn, and built by practitioners, not marketers.
 
-The application includes 46 diverse properties across the United States:
-- **Locations**: Nashville, Napa Valley, Austin, Seattle, Charleston, Los Angeles, Boston, Honolulu, Santa Fe, Portland, Malibu, Park City, Denver, Philadelphia, San Diego, Brooklyn, Las Vegas, Miami Beach, Chicago, Aspen, New Orleans, Scottsdale, South Lake Tahoe, New York, Savannah, San Francisco
-- **Price range**: $120 - $2200 per night
-- **Property types**: Penthouse, House, Loft, Villa, Condo, Cabin, Apartment
-- **New locations**:
-  - Philadelphia, PA - Historic colonial townhouse
-  - Savannah, GA - Victorian mansion with Southern charm
-  - Santa Fe, NM - Authentic adobe hacienda
-  - Napa Valley, CA - Luxury wine country estate
-- All properties feature unique images, detailed descriptions, and authentic amenities
+## Learning Resources by TestMu AI (Formerly LambdaTest)
 
+Learn modern testing through tutorials, guides, videos, and weekly updates:
 
-## 🚀 LambdaTest is Now TestMu AI
+* [TestMu AI Blog](https://www.testmuai.com/blog/)
+* [TestMu AI Learning Hub](https://www.testmuai.com/learning-hub/)
+* [TestMu AI on YouTube](https://www.youtube.com/@TestMuAI)
+* [TestMu AI Newsletter](https://www.testmuai.com/newsletter/)
 
-👋 Welcome to TestMu AI, the next evolution of LambdaTest. As of January 2026, [LambdaTest is Now TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/) - we have evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform designed for the modern DevOps era.
+## LambdaTest is Now TestMu AI
 
-Whether you have been part of the LambdaTest community for years or are just discovering TestMu AI, our mission remains the same: to help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
+On **January 12, 2026**, [LambdaTest evolved to TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/), the world's first fully autonomous **Agentic AI Quality Engineering Platform**.
 
-### 🔄 Our Rebrand Journey
+Same team. Same infrastructure. Same customer accounts. All existing LambdaTest logins, scripts, capabilities, and integrations continue to work without change.
 
-In 2017, we introduced LambdaTest with a clear mission: to become the world's most trusted cloud testing platform. We built a scalable, high-performance test cloud that eliminated flakiness, improved developer feedback cycles, and accelerated release velocity for teams worldwide.
+👉 Find the new home for [LambdaTest](https://www.testmuai.com).
 
-As LambdaTest grew, we expanded the platform into Test Intelligence, Visual Regression Testing, Accessibility Testing, API Testing, and Performance Testing, covering the entire testing lifecycle. These capabilities enabled teams to test any stack, on any technology, at enterprise scale.
+### How LambdaTest Evolved into TestMu AI
 
-Over time, we rebuilt the architecture to be AI-native from the ground up. What began as LambdaTest's high-performance testing cloud has now evolved into TestMu AI, an AI-native, multi-agent platform redefining modern quality engineering.
+In 2017, we launched LambdaTest with a simple mission: make testing fast, reliable, and accessible. As LambdaTest grew, we expanded into Test Intelligence, Visual Regression Testing, Accessibility Testing, API Testing, and Performance Testing, covering the full depth of the testing lifecycle.
 
-We chose the name TestMu AI to reflect our shift towards intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community stay the same.
+As software development entered the AI era, testing had to evolve, too. We rebuilt the architecture to be AI-native from the ground up, with autonomous agents that **plan, author, execute, analyze, and optimize tests** while keeping humans in the loop. The platform integrates with your repos, CI, IDEs, and terminals, continuously learning from every code change and development signal.
 
-👉 Find [LambdaTest's New Home](https://www.testmuai.com/).
+That evolution earned a new name: **TestMu AI**, built for an AI-first future of quality engineering. TestMu is not a new name for us. It is the name of our annual community conference, which has brought together 100,000+ quality engineers to discuss how AI would reshape testing, long before that became an industry norm.
 
-### 🔭 Explore TestMu AI
+What started as a high-performance cloud testing platform has transformed into an AI-native, multi-agent system powering a connected, end-to-end quality layer. That evolution defined a new identity: LambdaTest evolved into TestMu AI, built for an AI-first future of quality engineering.
 
-The same infrastructure LambdaTest customers relied on, now delivered through autonomous AI agents.
+## Support
 
-- [KaneAI](https://www.testmuai.com/kane-ai/)
-- [Agent-to-Agent Testing](https://www.testmuai.com/agent-to-agent-testing/)
-- [HyperExecute](https://www.testmuai.com/hyperexecute/)
-- [Real Device Cloud](https://www.testmuai.com/real-device-cloud/)
-- [Pricing](https://www.testmuai.com/pricing/)
-- [Documentation](https://www.testmuai.com/support/docs/)
+Got a question? Email [support@testmuai.com](mailto:support@testmuai.com) or chat with us 24x7 from our chat portal.
