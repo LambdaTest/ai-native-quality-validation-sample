@@ -20,7 +20,7 @@ With TestMu AI (Formerly LambdaTest), you can run AI-native PR quality validatio
 1. **Node.js** (v16 or higher) and **npm** or **yarn**.
 2. **Git** installed.
 3. A TestMu AI account — sign up here.
-4. The LambdaTest Cloud GitHub App installed on your forked repository.
+4. The TestMu AI (Formerly LambdaTest) Cloud GitHub App installed on your forked repository.
 5. GitHub Actions enabled on your fork.
 6. GitHub Pages configured (Settings → Pages → branch: **gh-pages**, root directory).
 
