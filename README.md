@@ -50,6 +50,8 @@ With TestMu AI (Formerly LambdaTest), you can validate GitHub pull requests usin
 
 ### Setup
 
+This fork can be used to validate the KaneAI pull request workflow with a small documentation-only change.
+
 
 
 Fork and clone the repository:
