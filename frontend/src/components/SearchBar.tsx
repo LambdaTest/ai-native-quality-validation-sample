@@ -25,7 +25,7 @@ const LOCATIONS = [
   { city: 'Denver', state: 'Colorado', country: 'United States' },
   { city: 'Los Angeles', state: 'California', country: 'United States' },
   { city: 'Seoul', state: 'South Korea', country: 'South Korea' },
-  { city: 'Ghaziabad', state: 'Uttar Pradesh', country: 'India' },
+  // { city: 'Ghaziabad', state: 'Uttar Pradesh', country: 'India' },
   { city: 'Delhi', state: 'Delhi', country: 'India' },
 ];
 
