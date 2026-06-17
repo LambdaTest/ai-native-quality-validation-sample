@@ -25,7 +25,15 @@ interface ListingFormData {
   images: string[];
 }
 
-const PROPERTY_TYPES = ['Villa', 'Apartment', 'Cabin', 'House', 'Loft', 'Condo', 'Penthouse'];
+const PROPERTY_TYPES: { name: string; icon: string; description: string }[] = [
+  { name: 'Villa', icon: '🏛️', description: 'Spacious & luxurious' },
+  { name: 'Apartment', icon: '🏙️', description: 'City living' },
+  { name: 'Cabin', icon: '🪵', description: 'Cozy & rustic' },
+  { name: 'House', icon: '🏡', description: 'Full home rental' },
+  { name: 'Loft', icon: '🏗️', description: 'Open plan living' },
+  { name: 'Condo', icon: '🏢', description: 'Modern complex' },
+  { name: 'Penthouse', icon: '✨', description: 'Premium top-floor' },
+];
 
 const AVAILABLE_AMENITIES = [
   'WiFi',
@@ -72,6 +80,7 @@ const BecomeHost = () => {
   });
 
   const [imageUrl, setImageUrl] = useState('');
+  const [instantBook, setInstantBook] = useState(false);
 
   const createListingMutation = useMutation({
     mutationFn: listingService.createListing,
@@ -262,19 +271,20 @@ const BecomeHost = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {PROPERTY_TYPES.map((type) => (
                     <button
-                      key={type}
+                      key={type.name}
                       type="button"
                       onClick={() =>
-                        setFormData({ ...formData, propertyType: type })
+                        setFormData({ ...formData, propertyType: type.name })
                       }
-                      className={`p-6 rounded-lg border-2 transition ${
-                        formData.propertyType === type
+                      className={`p-6 rounded-xl border-2 transition text-left ${
+                        formData.propertyType === type.name
                           ? 'border-airbnb-red bg-red-50'
                           : 'border-gray-300 hover:border-gray-400'
                       }`}
                     >
-                      <div className="text-3xl mb-2">🏠</div>
-                      <div className="font-semibold">{type}</div>
+                      <div className="text-3xl mb-2">{type.icon}</div>
+                      <div className="font-semibold text-gray-900">{type.name}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{type.description}</div>
                     </button>
                   ))}
                 </div>
@@ -417,6 +427,31 @@ const BecomeHost = () => {
                   />
                 </div>
 
+                {/* Instant Book Toggle */}
+                <div className="flex items-center justify-between p-4 border border-gray-200 rounded-xl bg-gray-50">
+                  <div>
+                    <p className="font-semibold text-gray-900">Instant Book</p>
+                    <p className="text-sm text-gray-500 mt-0.5">
+                      Allow guests to book without waiting for your approval
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setInstantBook(!instantBook)}
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${
+                      instantBook ? 'bg-airbnb-red' : 'bg-gray-300'
+                    }`}
+                    role="switch"
+                    aria-checked={instantBook}
+                  >
+                    <span
+                      className={`inline-block h-4 w-4 transform rounded-full bg-white shadow transition-transform ${
+                        instantBook ? 'translate-x-6' : 'translate-x-1'
+                      }`}
+                    />
+                  </button>
+                </div>
+
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -474,6 +509,9 @@ const BecomeHost = () => {
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-airbnb-red"
                     />
+                    {formData.price > 0 && formData.price < 50 && (
+                      <p className="text-xs text-yellow-600 mt-1">💡 Similar properties in your area average $80–$150/night</p>
+                    )}
                   </div>
                 </div>
               </div>
